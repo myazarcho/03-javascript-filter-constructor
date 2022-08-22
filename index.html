@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="images/my-logo.png" type="image/x-icon" />  
+
+    <title>Learn Javascript</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="../public/css/uikit.min.css">
+    <link rel="stylesheet" href="index.css" />
+    <script src="public/js/uikit.min.js"></script>
+    <!-- <script src="js/moment.min.js"></script> -->
+    <script src="public/css/uikit-3.15.3/js/uikit-icons.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+
+  </head>
+  <body>
+    
+    <header uk-sticky="end: !.uk-height-large; offset: 0">
+        <nav class="uk-navbar uk-navbar-container" uk-navbar>
+                <div class="uk-navbar-left uk-flex">
+                    <button class="uk-button sidebar-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="logo-text">
+                        <img class="logo" src="images/my-logo.png"><span>Learn Javascript</span>
+                    </div>
+                </div>
+
+                <div class="uk-navbar-center">
+                    <div class="">
+                        <form class="uk-search uk-search-default">
+                            <a href="" class="uk-search-icon-flip" uk-search-icon></a>
+                            <input class="uk-search-input" type="search" placeholder="Search">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="uk-navbar-right">
+
+                </div>
+        </nav>
+        <aside>
+            <div class="sidebar uk-container">
+                <div class="header uk-flex">
+                    <div class="logo-text">
+                        <img class="logo" src="images/my-logo.png"><span>Learn Javascript</span>
+                    </div>
+                    <button class="uk-button close-btn"><i class="fas fa-times"></i></button>
+                </div>
+               
+             
+                <ul>
+                    <li><a> <i class="fas fa-home"></i> Home</a></li>
+                </ul>
+            </div>
+        </aside>
+    </header>
+
+    <div class="aside-home">
+        <div class="">
+            <ul>
+                <li>
+                    <a> 
+                        <span><i class="fas fa-home"></i></span> 
+                        <span>Home</span> 
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+   <section class="show-music">
+        <div class="uk-container">
+                <div class="sub-nav">
+                    <div class="order-list">
+                        <ul class="category-filter">
+                            <li class="filter-btn active" data-id="0">All</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+   </section>
+
+   <section class="data-listing">
+       <div class="uk-container">
+           <div id="contents" class="uk-flex">
+                            <!-- <div class="content">
+                                <a>
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/img-2.jpeg ">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="title">
+                                                Spring Day (아포방포💜 한 편의 영화)
+                                            </div>
+                                            <div class="post-date">Posted Date: 11 Nov 2021</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> -->
+           </div>
+           
+           <div class="loadmore-wrap" style="margin-top: 60px; margin-bottom:60px">
+            <div class="uk-flex uk-flex-center">
+                <button id="loadmore" class="uk-button uk-button-primary">LOADMORE</button>
+            </div>
+        </div>
+       </div>
+   </section>
+
+  
+   
+
+    
+    <!-- javascript -->
+    <script src="index.js"></script>
+    <script src="static.js"></script>
+    
+    <script src="indexController.js"></script>
+  </body>
+</html>

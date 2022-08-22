@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+a , a:hover{
+    text-decoration: none;
+}
+.uk-navbar-container:not(.uk-navbar-transparent){
+    background: #202020;
+}
+
+form{
+    background: #121212;
+}
+.uk-search.uk-search-default{
+    width: 510px;
+}
+.uk-search-default .uk-search-input {
+    border: 1px solid #333;
+}
+.uk-search-default .uk-search-icon{
+    width: 60px;
+    background: #202020;
+    border: 1px solid #333;
+}
+input{
+    font-family:'Courier New', Courier, monospace!important;
+}
+.sidebar{
+    padding: 10px 25px;
+}
+
+.logo-text span{
+    font-size: 16px;
+    padding-left: 15px;
+    color: #F2CD01;
+}
+
+.logo-text .logo{
+    width: 40px;
+}
+
+
+.sidebar .header{
+    justify-content: space-between;
+}
+.sidebar-toggle{
+    padding: 13px 30px;
+    background: none!important;
+}
+.sidebar-toggle i{
+    color: #F2CD01;
+    font-size: 15px;
+    animation: bounce 2s ease-in infinite;
+}
+aside{
+    display: none;
+}
+aside{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background: #383838;
+    min-width: 270px;
+}
+.aside-home{
+    position: fixed;
+    left: 0;
+    width: 72px;
+    background: #202020;
+    height: 100vh;
+    padding-top: 10px;
+}
+.aside-home ul{
+    padding-left: 0;
+
+}
+.aside-home ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 14px;
+    color: #F2CD01;
+}
+.close-btn{
+    color: #F2CD01;
+    background: transparent;
+    padding: 0;
+
+}
+.close-btn i{
+    font-size: 20px;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding-left: 0;
+    padding-top: 30px;
+} 
+.sidebar ul li a{
+    font-size: 16px;
+    color: #F2CD01;
+}
+
+@keyframes bounce {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* Sub Nav */
+
+.show-music{
+    background: #202020;
+    margin-left: 72px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    
+} 
+.order-list ul{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.order-list ul li{
+    color: #F2CD01;
+    margin: 12px;
+    height: 32px;
+    min-width: 12px;
+    padding: 0 10px;
+    border-radius: 16px;
+    border: 1px solid #F2CD01;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    outline: none;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.order-list ul li:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.data-listing{
+    margin-left: 72px;
+    background: #121212;
+    padding-bottom: 60px;
+}
+#contents{
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#contents .content{
+    width: calc(100%/4 + (-19px));
+}
+#contents .card:hover .card-image img  {
+    opacity: 0.1;
+}
+#contents .card:hover .card-image::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+}
+.card:hover .card-image .uk-overlay.uk-overlay-default{
+    display: block;
+}
+.card-image .uk-overlay.uk-overlay-default{
+    display: none;
+}
+.card-image .uk-overlay.uk-overlay-default p{
+    color: #202020;
+    font-weight: bold;
+}
+.uk-overlay.uk-overlay-default{
+    padding: 10px 15px;
+    background: RGBA(242,205,1,0.6);
+}
+
+.card-image{
+    position: relative;
+}
+/* .card-image::before{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 56.25%;
+    background-color: rgba(255, 255, 255, 0.1);
+} */
+.card-body{
+    padding-top: 15px;
+}
+.card .title,.card .post-date{
+    color: #F2CD01;
+}
+.post-date{
+    font-size: 14px;
+    opacity: 0.7;
+}
+.filter-btn.active{
+    background: #F2CD01;
+    color: #202020;
+}
+.category-name {
+    background: #F2CD01;
+    color: #202020;
+    padding: 0 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#loadmore{
+    background: #F2CD01;
+    color: #202020;
+    font-weight: bold;
+}
